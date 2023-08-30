@@ -4,7 +4,7 @@ LABEL maintainer="ykj"
 ENV PYTHONUNBUFFERED 1
 
 COPY ./requirements.txt /tmp/requirements.txt
-COPY ./recipe-app-api /app
+COPY . /app
 WORKDIR /app
 EXPOSE 8000
 
